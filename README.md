@@ -1,14 +1,14 @@
 # FabricRelay
 
-FabricRelay is a proposed multi-tenant B2B textile catalog and wholesale inquiry management platform for textile wholesalers and their buyers. It is a solo project for the Build with Codex One-Month Challenge.
+FabricRelay is a proposed multi-tenant B2B textile catalog and wholesale inquiry management platform. The first use case is a Surat textile wholesaler sharing a branded catalog with buyers who need to identify a fabric, review its specs and colorways, and request a physical sample or wholesale quote. It is a solo project for the Build with Codex One-Month Challenge.
 
 ## Proposed workflows
 
-Wholesalers will digitize fabric swatches, maintain textile specifications, colorways, prices and availability, and publish branded catalogs. Buyers will browse published fabrics and request physical samples or wholesale quotations without signing in. Wholesalers will manage incoming requests for their own business.
+Wholesalers will manage fabric photos, design codes, GSM, width, colorway availability, MOQ and optional indicative rates in one branded catalog per business. They can share a stable catalog link through WhatsApp or another channel. Buyers will browse and filter published fabrics, then request a sample or quote without signing in. Wholesalers will manage incoming requests in their own inquiry queue and follow up through existing channels.
 
 | Role | Planned access |
 | --- | --- |
-| `SUPER_ADMIN` | Platform administration through explicitly authorized workflows |
+| `SUPER_ADMIN` | Manage wholesaler accounts and business profiles, activate or suspend businesses, and review recent platform activity |
 | `WHOLESALER_ADMIN` | Catalog and inquiry administration within an authorized wholesale tenant |
 | Public buyer | Published catalog browsing and sample or quotation inquiries without authentication |
 
@@ -24,8 +24,9 @@ Wholesalers will digitize fabric swatches, maintain textile specifications, colo
 
 ## Project status
 
-M00 covers repository documentation and the challenge evidence pack. Application setup, development commands, and deployment are planned for later approved work.
+M00 established the repository documentation and evidence pack. M01 documents the problem hypotheses, proposed MVP and validation protocol. Customer validation and product development remain pending.
 
 - [Milestone plan](PLANS.md)
+- [M01 discovery documents](evidence/01-understand.md#m01--understand-and-problem-validation)
 - [Engineering and agent instructions](AGENTS.md)
 - [Challenge evidence](evidence/README.md)
