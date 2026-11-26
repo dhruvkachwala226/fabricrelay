@@ -1,2 +1,3 @@
 Date,Milestone,Stage,Task,Model,ReasoningEffort,SelectionReason,Capabilities,Result
 2026-11-26,M00,Document,Initialize repository documentation and evidence,Not Recorded,Not Recorded,Not Recorded,Shell execution / workspace editing / local verification / image inspection,Complete
+2026-11-26,M01,Understand,Document problem discovery and MVP validation plan,GPT-6.2-Sol,Medium,Not Recorded,Shell execution / workspace editing / web research / local verification / image inspection,Documentation complete / customer validation pending

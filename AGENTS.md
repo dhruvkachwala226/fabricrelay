@@ -60,7 +60,7 @@ Build a multi-tenant B2B textile catalog and wholesale inquiry management platfo
 - Inspect the working tree and preserve existing work. Keep diffs focused on the approved milestone.
 - Never rewrite Git history.
 - Never commit, push or deploy without approval.
-- Use the [pull request template](.github/pull_request_template.md) when opening an approved pull request.
+- Use the repository's pull request template when available for an approved pull request.
 
 ## Evidence collection rules
 
