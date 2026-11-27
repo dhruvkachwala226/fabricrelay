@@ -24,8 +24,11 @@ Wholesalers will manage fabric photos, design codes, GSM, width, colorway availa
 
 ## Project status
 
-M00 established the repository documentation and evidence pack. M01 documents the problem hypotheses, proposed MVP and validation protocol. Customer validation and product development remain pending.
+M00 established the repository documentation and evidence pack. M01 documents the problem hypotheses, proposed MVP and validation protocol. M02 documents the approved modular monolith, shared-database tenant isolation, signed media workflow and milestone sequence. Customer validation and product development remain pending.
 
+- [System architecture](docs/02-plan/architecture.md)
+- [Implementation plan and requirements traceability](docs/02-plan/implementation-plan.md)
+- [Architecture decision records](docs/02-plan/adr/README.md)
 - [Milestone plan](PLANS.md)
 - [M01 discovery documents](evidence/01-understand.md#m01--understand-and-problem-validation)
 - [Engineering and agent instructions](AGENTS.md)

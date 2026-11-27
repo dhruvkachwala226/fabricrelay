@@ -11,3 +11,8 @@
 | [M01](milestones/M01.md) | Workspace editing | Wrote the discovery documents and updated the project and evidence records. |
 | [M01](milestones/M01.md) | Local verification | Used Python and Git to check document structure, roles, scope, requirements, links, evidence and credential patterns. |
 | [M01](milestones/M01.md) | Image inspection | Checked the M00 screenshot after repairing stale links and read the displayed model and effort from the M01 screenshot. |
+| [M02](milestones/M02.md) | Shell execution | Inspected repository state, read discovery and evidence documents, checked tooling and captured the local date. |
+| [M02](milestones/M02.md) | Web research | Consulted first-party runtime, authentication, media, MongoDB and hosting documentation during review. |
+| [M02](milestones/M02.md) | Workspace editing | Wrote planning documents, ADRs, milestone guidance and evidence using patches and UTF-8 file writes. |
+| [M02](milestones/M02.md) | Local verification | Used Python and Git to check structure, links, requirements, routes, authorization, evidence and repository hygiene. |
+| [M02](milestones/M02.md) | Image inspection | Read model, effort and date from a supplied M02 session screenshot. |

@@ -1,0 +1,18 @@
+# Verification strategy
+
+Use Vitest for unit and integration tests and Playwright for browser flows. Use deterministic synthetic fixtures, two tenants with overlapping design codes, a suspended account, a suspended business and an isolated MongoDB replica set. Create an isolated database per suite or worker and verify test URI/DB allowlists before cleanup. Use a Cloudinary adapter fake for deterministic CI and separate provider credentials only for opt-in smoke tests. Never seed or erase production from tests.
+
+| Suite | Coverage |
+| --- | --- |
+| Unit | Zod boundaries, invalid or duplicated keys, integer paise conversions and formatting, decimal width/GSM validation, exact meters per lump, publication readiness, role/tenant helper policies, every inquiry transition and retry comparison. |
+| Integration | Credentials and activated sessions, password/session version revocation, account and business suspension, platform/tenant route authorization, CRUD and archive across Fabric and Colorway, media attachment and deletion lifecycle, scoped profile update, inquiry intake/status, snapshot retention and purge, concurrent idempotency and throttling using MongoDB transactions. |
+| End-to-end | Super Admin provisions a wholesaler and activates the business. Wholesaler activates and signs in, enters specs and uploads a fabric swatch, adds a colorway, publishes listing and catalog and copies the link. A guest searches and opens a listing, submits a sample and a below-MOQ quotation, and sees references. Wholesaler opens own queue, finds snapshot and progresses requests. Run desktop Chromium and a mobile 360/390 px profile, with browser smoke on a representative WebKit profile. |
+| Security regression | Anonymous access to private APIs, wrong-role attempts, second-tenant ID or cursor substitution, suspended account/business with existing cookie, unpublished/draft via direct URL, invalid image ownership, offer of unsigned or oversize media, quote-only rate omission, public/audit/log privacy and same-origin defenses. |
+
+Add timing tests for two function clients using the same DB to submit concurrent duplicate requests and exceed the shared quota. Fail a transaction before insert and before commit to verify that retries produce one inquiry and one accepted counter entry. Exercise catalog changes against in-flight intake and verify commit ordering. In provider smoke, test near-limit files, draft image delivery and revoked public links, image replacement and cleanup retries.
+
+For accessibility, verify keyboard-only completion, named colorways, meaningful alt text, focus and announced errors. Run an accessibility scan on catalog, detail, forms and queue with zero serious or critical findings and supplement it manually. Check 360 and 390 CSS px without horizontal scrolling. For performance, use a staging tenant with 100 published listings, 4x CPU slowdown, 1.6 Mbps downstream and 150 ms RTT. Measure five cold catalog loads and require median LCP at most 2.5 seconds.
+
+## Planned checks
+
+Use npm scripts established at M03. The planned checks are npm run lint, npm run typecheck, npm run test:unit, npm run test:integration, npm run test:e2e, npm run test:security and npm run build. Install matched browsers in CI with npx playwright install --with-deps. When implementation exists, retain sanitized CI summary, accessibility reports and fixture-based screenshots or traces where useful. Keep customer acceptance and pilot outcomes separate from synthetic checks. See [traceability](implementation-plan.md) and [deployment](deployment-strategy.md). [Playwright CI](https://playwright.dev/docs/ci) · [Vitest](https://vitest.dev/guide/)

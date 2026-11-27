@@ -1,13 +1,13 @@
 # FabricRelay Codex evidence
 
-This pack records the work performed for the Build with Codex One-Month Challenge. [M00](milestones/M00.md) documents repository initialization. [M01](milestones/M01.md) documents problem discovery and the proposed MVP, with customer validation pending. [M02–M14](../PLANS.md) are pending.
+This pack records the work performed for the Build with Codex One-Month Challenge. [M00](milestones/M00.md) documents repository initialization. [M01](milestones/M01.md) documents problem discovery and the proposed MVP, with customer validation pending. [M02](milestones/M02.md) documents the approved architecture and implementation plan. [M03–M14](../PLANS.md) remain pending.
 
 ## Evidence locations
 
 | Record | Purpose |
 | --- | --- |
 | [Milestones](milestones/) | Individual records with the required evidence fields and completion status |
-| [Prompts](prompts/) | Original requests for [M00](prompts/M00.md) and [M01](prompts/M01.md) |
+| [Prompts](prompts/) | Original requests for [M00](prompts/M00.md), [M01](prompts/M01.md) and [M02](prompts/M02.md) |
 | [Screenshots](screenshots/) | Milestone folders for captures that substantiate work |
 | [Logs](logs/) | Sanitized command or verification transcripts when retained |
 | [Model usage](model-usage.csv) | Actual model, reasoning effort, selection reason, capabilities, and result |
